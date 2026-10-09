@@ -81,6 +81,7 @@ Explica en una o dos líneas qué significa cada uno de estos elementos. Escribe
 | `ports` | En `8080:80`, ¿qué número es el de tu equipo y cuál el del contenedor? |
 | `environment` | ¿Para qué sirven estas variables? |
 | `volumes` (dentro del servicio) | ¿Qué carpeta del contenedor se guarda y dónde? |
+
 | `volumes` (al final del fichero) | ¿Por qué se declaran también aquí? |
 
 Responde además a estas dos preguntas en la sección [✍️ Tus respuestas](#️-tus-respuestas):
@@ -180,8 +181,14 @@ docker compose up -d
 Responde en la sección [✍️ Tus respuestas](#️-tus-respuestas)
 
 1. ¿Qué hace cada una de las tres variables `PMA_HOST`, `PMA_USER` y `PMA_PASSWORD`?
+   <b>PMA_HOST: Define la dirección IP o nombre de host del servidor de la base de datos.PMA_USER: Define el nombre de usuario para acceder a la base de datos.PMA_PASSWORD: Define la contraseña del usuario para autenticarse en el servidor.</b>
+   
 2. Al ejecutar `docker compose up -d`, ¿qué contenedores se han recreado y cuáles no? ¿Por qué?
+   <b>Solo se recrean los contenedores que han sufrido cambios en su configuración o imagen dentro del archivo docker-compose.yml</b> <b>Docker Compose está diseñado para optimizar tiempos y recursos, evitando alterar los servicios que ya funcionan correctamente con la configuración actual.</b>
+
 3. El login automático es cómodo, pero **¿qué riesgo tiene?** ¿Lo usarías en un servidor de producción?
+
+<b>Cualquier persona con acceso a la URL de phpMyAdmin tendrá acceso total e inmediato a la base de datos. No se solicitará ninguna credencial adicional. Además, expone contraseñas en texto plano en los archivos de configuración.</b>
 
 Sube los cambios:
 
