@@ -1,0 +1,32 @@
+[2026-10-23 09:04:08.122 +00:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-23 09:04:10.039 +00:00] [INF] [8] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "0.0.0.0"
+[2026-10-23 09:04:10.138 +00:00] [INF] [8] Main: Jellyfin version: "12.2.0"
+[2026-10-23 09:04:10.161 +00:00] [INF] [8] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /jellyfin/jellyfin-web]", "[JELLYFIN_FFMPEG, /usr/lib/jellyfin-ffmpeg/ffmpeg]", "[JELLYFIN_CONFIG_DIR, /config/config]", "[JELLYFIN_DATA_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /cache]"]
+[2026-10-23 09:04:10.181 +00:00] [INF] [8] Main: Arguments: ["/jellyfin/jellyfin.dll"]
+[2026-10-23 09:04:10.182 +00:00] [INF] [8] Main: Operating system: "Debian GNU/Linux 13 (trixie)"
+[2026-10-23 09:04:10.183 +00:00] [INF] [8] Main: Architecture: X64
+[2026-10-23 09:04:10.185 +00:00] [INF] [8] Main: 64-Bit Process: True
+[2026-10-23 09:04:10.185 +00:00] [INF] [8] Main: User Interactive: True
+[2026-10-23 09:04:10.185 +00:00] [INF] [8] Main: Processor count: 4
+[2026-10-23 09:04:10.195 +00:00] [INF] [8] Main: Program data path: "/config"
+[2026-10-23 09:04:10.195 +00:00] [INF] [8] Main: Log directory path: "/config/log"
+[2026-10-23 09:04:10.196 +00:00] [INF] [8] Main: Config directory path: "/config/config"
+[2026-10-23 09:04:10.196 +00:00] [INF] [8] Main: Cache path: "/cache"
+[2026-10-23 09:04:10.197 +00:00] [INF] [8] Main: Temp directory path: "/tmp/jellyfin"
+[2026-10-23 09:04:10.197 +00:00] [INF] [8] Main: Web resources path: "/jellyfin/jellyfin-web"
+[2026-10-23 09:04:10.198 +00:00] [INF] [8] Main: Application directory: "/jellyfin/"
+[2026-10-23 09:04:10.273 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/config/data"` (Network) successfully checked with "133.9GiB" free which is over the minimum of "2GiB".
+[2026-10-23 09:04:10.274 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/cache"` (Fixed) successfully checked with "938.2GiB" free which is over the minimum of "2GiB".
+[2026-10-23 09:04:10.280 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/config"` (Network) successfully checked with "133.9GiB" free which is over the minimum of "2GiB".
+[2026-10-23 09:04:10.323 +00:00] [INF] [8] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-23 09:04:11.228 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-23 09:04:11.324 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-23 09:04:11.329 +00:00] [INF] [8] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-23 09:04:11.535 +00:00] [WRN] [7] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 3.0175ms with message '"Server is still starting up."'
+[2026-10-23 09:04:11.853 +00:00] [INF] [8] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-10-23 09:04:12.016 +00:00] [INF] [8] Jellyfin.Server.Migrations.JellyfinMigrationService: System initialization detected. Seed data. Startup mode is: MediaServer
